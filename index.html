@@ -157,7 +157,7 @@
   <div class="container is-max-desktop">
     <div class="columns ">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">IDD-3D Summary</h2>
+        <h2 class="title is-3">SynthForge Summary</h2>
         <div class="content has-text-justified">
           <p>
             SynthForge harnesses cutting-edge 3D generative models to create realistic, annotated facial datasets, empowering downstream facial analysis tasks with synthetic data that rivals real-world data in performance.
@@ -172,6 +172,26 @@
               </ul>
 
           </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Make a section for approach -->
+<section class="section hero is-dark">
+  <div class="container is-max-desktop">
+    <div class="columns ">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overall Approach</h2>
+        <div class="content has-text-justified">
+          <p>
+            The approach depicted in the diagram involves a multi-stage process for generating and utilizing synthetic facial data. First component (A) focuses on generating photorealistic facial images using a 3D-aware generative model, which are then annotated with features such as depth, segmentation, and key points. This data feeds into a (B) multi-task prediction module that processes common features and computes losses for depth, segmentation, and keypoints, incorporating a self-supervision loss. Stage II (C) utilizes the pre-trained multi-task prediction module to analyze real images, employing the learned tasks to predict detailed facial attributes, ensuring the model's applicability to real-world scenarios. This methodology demonstrates an effective loop from synthetic data training to practical real-world application.
+
+          </p>
+        </div>
+        <div class="hero-body has-text-centered">
+                <img src="static/images/SynthForge.png" alt="SynthForge Teaser image" width="80%"/>
         </div>
       </div>
     </div>
